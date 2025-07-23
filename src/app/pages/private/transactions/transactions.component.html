@@ -1,0 +1,41 @@
+<form [formGroup]="transactionForm">
+  <mat-form-field class="full-width">
+    <mat-label>Customer</mat-label>
+    <input
+      type="text"
+      aria-label="Customer"
+      matInput
+      formControlName="customer"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      @for (customer of filteredOptions | async; track customer.customerId) {
+        <mat-option [value]="customer.customerId">{{ customer.name }}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Species</mat-label>
+    <mat-select formControlName="species">
+      <mat-option value="beef">Beef</mat-option>
+      <mat-option value="hobg">Hog</mat-option>
+      <mat-option value="lamb">Lamb</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Color</mat-label>
+    <input matInput formControlName="color" />
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Type</mat-label>
+    <mat-select formControlName="type">
+      <mat-option value="bull">Bull</mat-option>
+      <mat-option value="steer">Steer</mat-option>
+      <mat-option value="heifer">Heifer</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Approximate weight</mat-label>
+    <input matInput formControlName="approximateWeight" />
+  </mat-form-field>
+</form>

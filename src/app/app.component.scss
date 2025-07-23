@@ -1,0 +1,13 @@
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  max-width: var(--component-max-width);
+  flex: 1;
+  display: block;
+  margin: 0 auto;
+}

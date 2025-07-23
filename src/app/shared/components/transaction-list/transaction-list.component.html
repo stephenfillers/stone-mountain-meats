@@ -1,0 +1,17 @@
+<ul>
+  @for (transaction of transactions; track transaction.transactionId) {
+    <li class="transaction">
+      <div class="details">
+        <span class="customer">{{ getCustomerName(transaction) | uppercase }}</span>
+        <div class="sub-details">
+          <span class="detail">{{ transaction.type | uppercase }}</span>
+          /
+          <span class="detail">{{ transaction.transactionId | uppercase }}</span>
+          /
+          <span class="detail">{{ transaction.transactionDate | date | uppercase }}</span>
+        </div>
+      </div>
+      <button>{{ 'Manage' | uppercase }}</button>
+    </li>
+  }
+</ul>

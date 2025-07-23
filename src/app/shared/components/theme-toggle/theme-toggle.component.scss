@@ -1,0 +1,12 @@
+:host {
+  display: grid;
+}
+
+mat-icon {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+mat-icon:hover {
+  color: var(--mat-sys-primary);
+}

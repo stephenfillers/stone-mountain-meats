@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+form {
+  max-width: 500px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}

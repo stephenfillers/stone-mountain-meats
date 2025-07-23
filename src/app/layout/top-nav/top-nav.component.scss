@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  // height: 40px;
+}
+
+mat-toolbar {
+  width: var(--component-max-width);
+  margin: 0 auto;
+
+  .logo {
+    max-width: 250px;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--mat-sys-on-surface);
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  @include mat.toolbar-overrides(
+    (
+      // container-background-color: red,
+       // container-text-color: #fff,
+    )
+  );
+}

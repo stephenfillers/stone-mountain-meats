@@ -1,0 +1,41 @@
+main {
+  text-align: center;
+  display: grid;
+  place-content: center;
+  min-height: 400px;
+
+  .container {
+    max-width: 650px;
+  }
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.highlight {
+  color: var(--mat-sys-primary);
+  font-weight: 700;
+}
+
+.underline {
+  border-bottom: 2px solid var(--mat-sys-primary);
+  // background-color: var(--mat-sys-primary);
+  // color: var(--mat-sys-on-primary);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

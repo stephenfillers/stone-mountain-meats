@@ -1,0 +1,14 @@
+:host {
+  background-color: var(--mat-sys-surface-container-lowest);
+  color: var(--mat-sys-on-surface);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: var(--component-max-width);
+  display: block;
+  margin: 0 auto;
+  // text-align: center;
+}
