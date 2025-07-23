@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --base-href "/"
+        run: npm run build -- --base-href "/stone-mountain-meats/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
