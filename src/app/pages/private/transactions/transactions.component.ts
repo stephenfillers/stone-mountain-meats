@@ -60,37 +60,4 @@ export class TransactionsComponent {
     const customer = customers.find((c) => c.customerId === customerId);
     return customer ? customer.name : '';
   };
-
-  formControls = [
-    {
-      label: 'Customer',
-      type: 'autocomplete',
-    },
-    {
-      label: 'Species',
-      type: 'select',
-      options: [
-        { label: 'Beef', value: 'beef' },
-        { label: 'Hog', value: 'hog' },
-        { label: 'Lamb', value: 'lamb' },
-      ],
-    },
-    {
-      label: 'Color',
-      type: 'text',
-    },
-    {
-      label: 'Type',
-      type: 'select',
-      options: [
-        { label: 'Bull', value: 'bull' },
-        { label: 'Steer', value: 'steer' },
-        { label: 'Heifer', value: 'Heifer' },
-      ],
-    },
-    {
-      label: 'Approximate weight (lbs)',
-      type: 'number',
-    },
-  ];
 }

@@ -5,8 +5,11 @@
   justify-content: space-between;
 }
 
+app-top-nav {
+  margin-bottom: 1rem;
+}
 .content {
-  max-width: var(--component-max-width);
+  width: var(--component-max-width);
   flex: 1;
   display: block;
   margin: 0 auto;

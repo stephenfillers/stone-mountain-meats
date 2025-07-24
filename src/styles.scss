@@ -9,8 +9,31 @@
 }
 
 h1 {
-  font-size: 3.4rem;
-  line-height: 4rem;
-  font-weight: 500;
   margin-bottom: 2rem;
+}
+// h1 {
+//   font-size: 3.4rem;
+//   line-height: 4rem;
+//   font-weight: 500;
+//   margin-bottom: 2rem;
+// }
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: 0 1rem;
+  width: 100%;
+}
+
+.grid-form > * {
+  width: 100%;
+  grid-column: span 12;
+}
+
+.grid-form .half-width {
+  grid-column: span 6;
+}
+
+.grid-form .third-width {
+  grid-column: span 4;
 }

@@ -1,5 +1,6 @@
-<form [formGroup]="transactionForm">
-  <mat-form-field class="full-width">
+<h1>Add a transaction</h1>
+<form [formGroup]="transactionForm" class="grid-form">
+  <mat-form-field appearance="outline" class="full-width">
     <mat-label>Customer</mat-label>
     <input
       type="text"
@@ -14,7 +15,7 @@
       }
     </mat-autocomplete>
   </mat-form-field>
-  <mat-form-field class="full-width">
+  <mat-form-field appearance="outline" class="half-width">
     <mat-label>Species</mat-label>
     <mat-select formControlName="species">
       <mat-option value="beef">Beef</mat-option>
@@ -22,11 +23,11 @@
       <mat-option value="lamb">Lamb</mat-option>
     </mat-select>
   </mat-form-field>
-  <mat-form-field class="full-width">
+  <mat-form-field appearance="outline" class="half-width">
     <mat-label>Color</mat-label>
     <input matInput formControlName="color" />
   </mat-form-field>
-  <mat-form-field class="full-width">
+  <mat-form-field appearance="outline" class="half-width">
     <mat-label>Type</mat-label>
     <mat-select formControlName="type">
       <mat-option value="bull">Bull</mat-option>
@@ -34,7 +35,7 @@
       <mat-option value="heifer">Heifer</mat-option>
     </mat-select>
   </mat-form-field>
-  <mat-form-field class="full-width">
+  <mat-form-field appearance="outline" class="half-width">
     <mat-label>Approximate weight</mat-label>
     <input matInput formControlName="approximateWeight" />
   </mat-form-field>

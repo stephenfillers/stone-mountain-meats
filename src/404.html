@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script type="text/javascript">
+      // Redirect all requests to index.html and preserve the path
+      const redirect =
+        '/?' +
+        document.location.pathname.replace(/^\//, '') +
+        document.location.search +
+        document.location.hash;
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
