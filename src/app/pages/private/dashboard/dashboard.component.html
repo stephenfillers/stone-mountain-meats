@@ -1,2 +1,31 @@
-<button matButton routerLink="/customers">Add customer</button>
-<button matButton routerLink="/transactions">Add transaction</button>
+<h1>Dashboard</h1>
+<div class="container">
+  <div class="card">
+    <h2>Top customers</h2>
+    <div class="highlights-content">
+      <div class="highlights">
+        <div class="highlight"></div>
+        <div class="highlight"></div>
+        <div class="highlight"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button matButton routerLink="/customers">View customers</button>
+      <button matButton routerLink="/customers/new">Add customer</button>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Recent transactions</h2>
+    <div class="highlights-content">
+      <div class="highlights">
+        <div class="highlight"></div>
+        <div class="highlight"></div>
+        <div class="highlight"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button matButton routerLink="/transactions">View transactions</button>
+      <button matButton routerLink="/transactions">Add transaction</button>
+    </div>
+  </div>
+</div>

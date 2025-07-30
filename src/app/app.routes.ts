@@ -6,7 +6,8 @@ import { authGuard } from './core/guards/auth-guard';
 import { publicGuard } from './core/guards/public-guard';
 import { NotFoundComponent } from './pages/public/not-found/not-found.component';
 import { TransactionsComponent } from './pages/private/transactions/transactions.component';
-import { CustomersComponent } from './pages/private/customers/customers.component';
+import { CustomersEditorComponent } from './pages/private/customers/views/customers-editor/customers-editor.component';
+import { CustomersTableComponent } from './pages/private/customers/views/customers-table/customers-table.component';
 
 export const routes: Routes = [
   {
@@ -30,9 +31,19 @@ export const routes: Routes = [
     component: TransactionsComponent,
   },
   {
+    path: 'customers/:id',
+    canActivate: [authGuard],
+    component: CustomersEditorComponent,
+  },
+  {
+    path: 'customers/new',
+    canActivate: [authGuard],
+    component: CustomersEditorComponent,
+  },
+  {
     path: 'customers',
     canActivate: [authGuard],
-    component: CustomersComponent,
+    component: CustomersTableComponent,
   },
   {
     path: '**',

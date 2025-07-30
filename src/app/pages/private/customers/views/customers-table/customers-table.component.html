@@ -1,0 +1,9 @@
+<h1>Customers</h1>
+
+<app-data-table
+  [dataSource]="customers()"
+  [displayedColumns]="displayedColumns"
+  [resultsLength]="resultsLength"
+  (onRowClicked)="handleRowClicked($event)"
+  (onPageChanged)="handlePageChanged($event)"
+/>

@@ -2,7 +2,7 @@
   @for (transaction of transactions; track transaction.transactionId) {
     <li class="transaction">
       <div class="details">
-        <span class="customer">{{ getCustomerName(transaction) | uppercase }}</span>
+        <!-- <span class="customer">{{ getCustomerName(transaction) | uppercase }}</span> -->
         <div class="sub-details">
           <span class="detail">{{ transaction.type | uppercase }}</span>
           /

@@ -1,6 +1,6 @@
 <h1>Add a transaction</h1>
 <form [formGroup]="transactionForm" class="grid-form">
-  <mat-form-field appearance="outline" class="full-width">
+  <!-- <mat-form-field appearance="outline" class="full-width">
     <mat-label>Customer</mat-label>
     <input
       type="text"
@@ -14,7 +14,7 @@
         <mat-option [value]="customer.customerId">{{ customer.name }}</mat-option>
       }
     </mat-autocomplete>
-  </mat-form-field>
+  </mat-form-field> -->
   <mat-form-field appearance="outline" class="half-width">
     <mat-label>Species</mat-label>
     <mat-select formControlName="species">
@@ -39,4 +39,11 @@
     <mat-label>Approximate weight</mat-label>
     <input matInput formControlName="approximateWeight" />
   </mat-form-field>
+  <div class="actions">
+    <a matButton routerLink="/">Go back</a>
+    <div>
+      <button matButton="outlined" [disabled]="!transactionForm.valid">Save for later</button>
+      <button matButton="filled" [disabled]="!transactionForm.valid">Start workflow</button>
+    </div>
+  </div>
 </form>
